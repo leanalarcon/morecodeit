@@ -1,0 +1,359 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+	background-color:black;
+	font-family: 'Oswald', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+}
+.padre{
+	position: fixed;
+  width: 100%;
+  z-index: 1001;
+	top: 0;
+}
+
+.margen-interno{
+	padding: 0 50px;
+}
+
+.header{
+	background-color: #141414;
+	display: flex;
+	flex-flow: column nowrap;
+	background-position: center;
+}   
+
+    .menu{
+    	display: flex;
+    	flex-flow: row nowrap;
+    	align-items: center;
+    	height: 50px;
+    }
+
+      .logo{
+      	flex: 1 1 auto
+      }
+
+      .logo a {
+      	color: #fff;
+        }
+
+        .nav a{
+          color:#9e9090;
+          font-size: 12px;
+          padding: 0 10px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+        }
+
+        .nav a:hover{
+        	color: #d6d4d4;
+        }
+
+.section1{
+	height: 100%;
+}
+  
+       video{
+	  height: 50%;
+	  width: 100%;
+     }
+
+  .nosotros{
+  	padding: 150px 0 50px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+      .imagen{ 
+        height: auto;
+      	z-index: -1;
+      }
+        .imagenMedia{
+          max-width: 100%;
+        }
+
+        .textoNosotros{
+        	color: #fff;
+        }
+
+
+           .brindar{
+            text-align: center;
+            font-size: 14px;
+            color:#9e9090;
+           }
+
+           .elegirnos{
+            margin: 50px;
+           }
+
+ .imgseparadora{
+  width: 100%;
+  display: -webkit-box;
+ }
+
+ .section2{
+ 	height: 100%;
+  padding: 100px 0 150px 0 ;
+ }
+  
+ .contenedor{
+  margin: 0 50px;
+ }
+
+   .ayudarte{
+    padding-top: 70px;
+   }
+
+    .ayudarte, .somos, .brindar, .contactanos, .descripcion{
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-align: center;
+      color: #fff;
+      margin: 10px;
+    }
+
+    .titulo, .sobre, .tituloFormulario{
+      text-align: center;
+      margin-bottom: 30px;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 38px;
+      letter-spacing: 10px;
+    }
+
+    .tarjetas{
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      margin-top: 100px;
+    }
+
+       .basico{
+        padding: 20px;
+        justify-content: space-around;
+        width: 30%;
+        text-align: center;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, .1);
+        transition: transform 0.6s;
+        color: #fff;
+       }
+
+       .basico:hover{
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .1);
+        transform: scale(1.03);
+        cursor: pointer;
+       }
+
+       .basico i{
+        color: #fff;
+        font-size: 30px;
+       }
+
+       h3{
+        margin: 20px;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+       }
+
+       .basico p{
+        font-size: 14px;
+        margin-bottom: 10px;
+        color:#9e9090;
+       }
+
+   .contactanos{
+   	padding-top: 50px;
+   }   
+
+   .contenedorFomulario{
+   	background: url(../imagenes/444.jpg);
+   	height: 100%;
+    background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	position: relative;
+    filter: grayscale(65%);
+   }
+
+   
+
+   .form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 50px;
+   }
+
+   .input{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 20px 10px;
+   }
+
+   .input::placeholder{
+    color: #fff;
+    font-family: 'Anton', sans-serif;
+   }
+
+   input[type="text"],
+   input[type="email"]{
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 30px;
+   }
+
+   .form textarea{
+   	width: 100%;
+   	margin-bottom: 15px;
+    font-family: sans-serif;
+   }
+
+   .btnEnviar{
+    font-family: 'Anton', sans-serif;
+   	width: 120px;
+   	text-align: center;
+   	padding: 14px 0;
+   	float: none;
+    background-color: transparent;
+    color:#fff;
+    border-color: #fff;
+   }
+
+   .btnEnviar:hover{
+     transition:all 2.0s ease-in-out;
+     cursor: pointer;
+     background-color: rgba(0,0,0,0.8);
+     border-color: black;
+   }
+
+   footer{
+   	height: 100%;
+   }  
+
+     .nombrepagina , .logo a{
+     	font-family: 'Anton', sans-serif;
+     	font-style: italic;
+     	font-size: 40px;
+     }
+
+      .nombrepagina{
+      	text-align: center;
+      	color: #fff;
+      }
+
+      .icon{
+      	justify-content: center;
+      	flex: 1 1 auto;
+      	display: flex;
+      	margin: 25px;
+      }
+
+      .icon a{
+      	font-size: 35px;
+      	color: #fff;
+      	padding: 0 25px;
+      }
+
+      .icon a:hover{
+      	color: #343434;
+      }
+
+      .descripcion{
+      	padding: 30px 0;
+      }
+
+.btnWhatsApp{
+text-decoration: none;
+position: fixed;
+width: 60px;
+height: 60px;
+line-height: 55px;
+bottom: 30px;
+right: 30px;
+color: #fff;
+background: #141414;
+border-radius: 50px;
+text-align: center;
+font-size: 30px;
+box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+z-index: 1;
+}
+
+.btnWhatsApp:hover{
+ text-decoration: none;
+ color: #141414;
+ background: #fff;
+ transition:all 2.0s ease-in-out;
+}
+
+body::-webkit-scrollbar{
+  width: 10px;
+  background: #141414;
+}
+
+body::-webkit-scrollbar-thumb{
+  width: 7px;
+  border-radius: 7px;
+  background: #fff;
+  border-right: 2px solid #141414;
+}
+
+/*-----Media Queries-----*/
+
+@media all and (max-width: 570px){
+  .menu{
+    flex-direction: column;
+    height: auto;
+  }
+  .inicio{
+    padding-top: 65px;
+  }
+  .logo a{
+    font-size: 30px;
+  }
+  .form{
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 420px){
+  .nav a{
+    font-size: 8px;
+    padding: 0 2px;     
+  }
+}
+
+@media all and (max-width: 1000px){
+  .nosotros{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   .textoNosotros{
+    padding: 25px 0;
+   }
+}
+
+@media all and (max-width: 1400px){
+  input[type="text"], input[type="email"]{
+    width: 100%;
+  }
+}
